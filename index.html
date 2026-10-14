@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Event Registration – UIT Karnavati University</title>
+
+  <!-- Link to our CSS file -->
+  <link rel="stylesheet" href="style.css" />
+</head>
+
+<body>
+
+  <!-- ── TOP HEADER ── -->
+  <header>
+    <h1>🎓 Unitedworld Institute of Technology</h1>
+    <p>Karnavati University · Gandhinagar, Gujarat</p>
+  </header>
+
+  <!-- ── MAIN CARD ── -->
+  <main>
+    <div class="card">
+
+      <!-- Card heading -->
+      <h2>Event Registration</h2>
+      <p class="subtitle">Fill the form below to register for a college event</p>
+
+      <!-- ── REGISTRATION FORM ── -->
+      <form id="regForm">
+
+        <!-- Full Name field -->
+        <div class="field">
+          <label for="name">Full Name</label>
+          <input
+            type="text"
+            id="name"
+            placeholder="e.g. MILIND KATESHIYA"
+            required
+          />
+        </div>
+
+        <!-- Event dropdown -->
+        <div class="field">
+          <label for="event">Select Event</label>
+          <select id="event" required>
+            <option value="">-- Choose an Event --</option>
+            <option value="Tech Fest 2026"> Tech Fest 2026</option>
+            <option value=" SIH Hackathon"> Hackathon</option>
+            <option value="Cultural Night"> Cultural Night</option>
+            <option value="AI/ML Workshop"> AI / ML Workshop</option>
+            <option value="Sports Meet"> Sports Meet</option>
+            <option value="Project Expo"> Project Expo</option>
+          </select>
+        </div>
+
+        <!-- Submit button -->
+        <button type="submit" id="submitBtn">
+          <span id="btnText">Register Now →</span>
+        </button>
+
+      </form>
+
+      <!-- ── SUCCESS MESSAGE (hidden by default) ── -->
+      <div id="successMsg" class="success-box">
+        🎉 Registration Successful!<br />
+        <small>We'll send you the event details soon.</small>
+      </div>
+
+      <!-- ── ERROR MESSAGE (hidden by default) ── -->
+      <div id="errorMsg" class="error-box">
+        ❌ Something went wrong. Please try again.
+      </div>
+
+    </div>
+  </main>
+
+  <!-- ── FOOTER ── -->
+  <footer>
+    <p>© 2026 Karnavati University · events@karnavatiuniversity.edu.in</p>
+  </footer>
+
+  <!-- Link to our JavaScript -->
+  <script src="app.js"></script>
+
+</body>
+</html>
